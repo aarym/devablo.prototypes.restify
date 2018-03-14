@@ -1,0 +1,27 @@
+{
+  "name": "devablo.prototypes.restify",
+  "version": "1.0.0",
+  "description": "Initial prototype/demo for REST API with Restify",
+  "main": "src/server.js",
+  "scripts": {
+    "debug": "node src/server.js & node --inspect-brk node_modules/.bin/jest --runInBand",
+    "start": "node src/server.js",
+    "test": "jest"
+  },
+  "author": "Aaron Morey",
+  "license": "ISC",
+  "dependencies": {
+    "restify": "^6.3.4"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "restify-clients": "^2.0.0",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}
